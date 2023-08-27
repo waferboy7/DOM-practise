@@ -1,0 +1,31 @@
+{
+  "env": {
+    "es6": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["simple-import-sort", "@typescript-eslint", "import"],
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "eol-last": "off",
+    "linebreak-style": "off",
+    "@typescript-eslint/quotes": "off",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "import/first": "error",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "import/newline-after-import": "error",
+    "consistent-return": "off",
+    "import/no-extraneous-dependencies": "off",
+    "object-curly-newline": "off",
+    "@typescript-eslint/ban-ts-comment": "off"
+  }
+}
